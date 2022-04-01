@@ -2,11 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";         
+import Home from './Home/Home';
+import NavBar from './Home/NavBar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+
+
+    <Routes>
+    <Route path="/" element={<App />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/navbar" element={<NavBar/>} />
+
+    </Routes>
+
+    </BrowserRouter>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
