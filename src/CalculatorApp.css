@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+
+}
+
+.calcApp {
+  background-color: rgb(78, 75, 75);
+  width: 40vw;
+  height: 50vh;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: solid;
+  border-radius: 10px;
+}
