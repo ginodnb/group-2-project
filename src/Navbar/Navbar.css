@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 8vh;
+  color: black;
+  background: #0c7e0c;
+}
+
+.brandButton{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navMenu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  height: 8vh;
+}
+
+.navToggler div{
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: darkgrey;
+}
+
+.navToggler{
+  cursor: pointer;
+  display: none;
+  background: #0c7e0c;
+}
+
+@media screen and (max-width: 768px) {
+  .navToggler{
+    display: block;
+  }
+  .navMenu{
+    position: fixed;
+    top: 7vh;
+    right: 30%;
+    width: 30%;
+    height: 50vh;
+    background: #0c7e0c;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    padding: 0;
+  }
+  
+}
+
+.navActive{
+  transform: translateX(0);
+}
