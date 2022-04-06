@@ -48,15 +48,15 @@ a {
   background: #0c7e0c;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navToggler{
     display: block;
   }
   .navMenu{
     position: fixed;
     top: 7vh;
-    right: 0;
-    width: 50%;
+    right: 30%;
+    width: 30%;
     height: 50vh;
     background: #0c7e0c;
     flex-direction: column;

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import '../Navbar/Navbar.css'
 
 function Navbar(props) {
-  const [active, setActive] = useState ('navMenu');
+  const [active,setActive] = useState('navMenu');
   
     const navToggle = () => {
       active === 'navMenu' 
@@ -18,7 +18,7 @@ function Navbar(props) {
         <li className='navItem'><a href="#" className='navLink'>Addition</a></li>
         <li className='navItem'><a href="#" className='navLink'>Multiplication</a></li>
       </ul>
-      <div onClick={navToggle} className="navToggler">
+      <div oncClick={navToggle} className="navToggler">
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
