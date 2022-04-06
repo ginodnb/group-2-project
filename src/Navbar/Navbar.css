@@ -19,7 +19,7 @@ a {
   justify-content: space-around;
   min-height: 8vh;
   color: black;
-  background: #0c7e0c;
+  background: #0c0e7e;
 }
 
 .brandButton{
@@ -45,7 +45,7 @@ a {
 .navToggler{
   cursor: pointer;
   display: none;
-  background: #0c7e0c;
+  background: #0c0e7e;
 }
 
 @media (max-width: 768px) {
@@ -58,13 +58,12 @@ a {
     right: 0;
     width: 50%;
     height: 50vh;
-    background: #0c7e0c;
+    background: #0c0e7e;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
     padding: 0;
   }
-  
 }
 
 .navActive{
