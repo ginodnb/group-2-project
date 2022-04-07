@@ -18,6 +18,7 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
   
   
 }
@@ -30,3 +31,22 @@
 .border-gradient-purple {
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
+
+.tags {
+  margin: 10px;
+
+  width: 190px;
+}
+
+h4 {
+  margin-bottom: 30px;
+  color: white;
+
+}
+
+.submit-button {
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+

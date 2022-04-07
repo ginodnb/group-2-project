@@ -15,10 +15,10 @@ function Navbar(props) {
 
   return (
     <nav className='nav'>
-      <a href="#" className='brandButton'>Team 4.2 Calculator</a>
+      <a href="/" className='brandButton'>Team 4.2 Calculator</a>
       <a href='https://github.com/ginodnb/group-2-project' target="_blank" ><i className="pi pi-github" style={{'fontSize': '1.5em'}}></i></a>
       <ul className={active}>
-        <li className='navItem'><a href="#" className='navLink'>Home</a></li>
+        <li className='navItem'><a href="/" className='navLink'>Home</a></li>
         <li className='navItem'><a href="#" className='navLink'>Addition</a></li>
         <li className='navItem'><a href="/Home" className='navLink'>Multiplication</a></li>
         <li className='navItem'><a href="/Divide" className='navLink'>Divide</a></li>
