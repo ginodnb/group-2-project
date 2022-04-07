@@ -13,6 +13,7 @@ import "primereact/resources/primereact.min.css";                  //core css
 import "primeicons/primeicons.css";         
 import Home from './Home/Home';
 import NavBar from './Home/NavBar';
+import Divide from './Divide/Divide';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.render(
     <Route path="/" element={<App />} />
       <Route path="/home" element={<Home />} />
       <Route path="/navbar" element={<NavBar/>} />
+      <Route path="/divide" element={<Divide />} />
 
     </Routes>
 

@@ -1,7 +1,7 @@
 import React, { useState, useForm } from 'react';
 import "./HomeStyle.css";
 import { Button } from 'primereact/button';
-import { InputNumber } from 'primereact/inputnumber';
+import Navbar from '../Navbar/Navbar';
 
 
 function Home() {
@@ -10,17 +10,15 @@ function Home() {
     // const textInput = React.useRef();
     // const clearInput = () => (textInput.current.value = 0);
 
-    // const {reset } = useForm<FormValues>({
-    //     defaultValues: {
-    //         numberOne: 0,
-    //         numberTwo: 0
-    //     }
-    // })
+    const reset = () => {
+        setNumberOne(0)
+        setNumberTwo(0)
+        setResult(0)
+    };
 
-    const [numberOne, setNumberOne] = useState();
-    const [numberTwo, setNumberTwo] = useState();
+    const [numberOne, setNumberOne] = useState(0);
+    const [numberTwo, setNumberTwo] = useState(0);
     const [result, setResult] = useState(0);
-    // const [reset, setReset] = useState();
 
     const multiply = () => {
       setResult(numberOne * numberTwo)
@@ -38,12 +36,18 @@ function Home() {
 
     // console.log(calc);
     return (
+        <>
+        <Navbar />
+
     <div className='main'>
+        
 
 
         <div className='main-2'>
+            
         <div className='header-div'>
-        <h1>The Multiplier Machine</h1>
+
+        <h1 className='h1'>The Multiplier Machine</h1>
         </div>
 
         <div className='main-3'>
@@ -57,8 +61,9 @@ function Home() {
 
             <Button id='multiply' onClick={multiply}>Multiply</Button>
             <br />
-            <input type='button' value="Reset" id='restter'></input>
-            {/* <label htmlFor="resetter"></label> */}
+
+            <Button label="Reset" onClick={reset} className="p-button-warning p-button-rounded"  />
+            {/* <input  onClick={reset} type='button' value="Reset" id='restter'></input> */}
 
 
             
@@ -68,6 +73,9 @@ function Home() {
         </div>
         
     </div>
+
+    </>
+    
     )
 }
 
