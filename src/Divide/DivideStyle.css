@@ -1,0 +1,61 @@
+.first {
+    height: 80vh;
+    width: 90vw;
+    background-color: rgb(63, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    
+    
+}
+.title {
+    position: absolute;
+    top: 110px;
+    
+}
+
+h3 {
+    margin: 80px;
+    font-size: 50px;
+    color: rgb(42, 128, 165);
+    position: absolute;
+    right: 80px;
+    
+}
+
+h1 {
+    font-weight: 900;
+    letter-spacing: 7px;
+    color: blanchedalmond;
+    margin-top: 29px;
+}
+
+.left-box {
+    background-color: rgb(206, 189, 163);
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.right-box {
+    background-color: rgb(206, 189, 163);
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn {
+    position: absolute;
+    top: 600px;
+    left: 350px;
+}
