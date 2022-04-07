@@ -8,7 +8,7 @@ function App() {
   
   const [numberOne, setNumberOne] = useState();
   const [numberTwo, setNumberTwo] = useState();
-  const [results, setResult] = useState();
+  const [results, setResult] = useState(0);
 
   const multiply = () => {
 setResult(numberOne+numberTwo)
