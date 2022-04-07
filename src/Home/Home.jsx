@@ -1,6 +1,7 @@
 import React, { useState, useForm } from 'react';
 import "./HomeStyle.css";
 import { Button } from 'primereact/button';
+import Navbar from '../Navbar/Navbar';
 
 
 function Home() {
@@ -35,12 +36,18 @@ function Home() {
 
     // console.log(calc);
     return (
+        <>
+        <Navbar />
+
     <div className='main'>
+        
 
 
         <div className='main-2'>
+            
         <div className='header-div'>
-        <h1>The Multiplier Machine</h1>
+
+        <h1 className='h1'>The Multiplier Machine</h1>
         </div>
 
         <div className='main-3'>
@@ -66,6 +73,9 @@ function Home() {
         </div>
         
     </div>
+
+    </>
+    
     )
 }
 
